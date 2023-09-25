@@ -3,11 +3,7 @@ export default function NavBar() {
     <nav className="bg-black w-screen flex justify-center">
       <div className="flex items-center gap-x-20 h-16  justify-between ">
         <picture className="h-full ml-10 ">
-          <img
-            src="/logo.png"
-            alt="logo.png"
-            className="w-31 h-full inline-block"
-          />
+          <img src="/logo.png" alt="logo.png" />
         </picture>
 
         <div className="flex items-center mx-52">
