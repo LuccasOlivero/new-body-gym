@@ -6,6 +6,12 @@ module.exports = {
       fontFamily: {
         Montserrat: ["Montserrat"],
       },
+
+      animation: {
+        rotate: "rotate-center 0.6s ease-in-out both",
+      },
+
+      keyframes: {},
     },
   },
   plugins: [],
