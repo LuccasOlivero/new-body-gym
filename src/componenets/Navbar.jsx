@@ -1,6 +1,6 @@
 export default function NavBar() {
   return (
-    <nav className="flex flex-row h-[5.5rem] items-center justify-between py-8 px-12 top-0 left-0 right-0 w-screen z-50 bg-black font-Montserrat ">
+    <nav className="flex flex-row h-[5.5rem] items-center justify-between py-8 px-12 top-0 left-0 right-0 w-screen z-50 bg-black font-Montserrat">
       <picture className="h-[10rem] top-[.5rem] relative ">
         <img src="/logo.png" alt="logo.png" className="w-full h-full block" />
       </picture>
@@ -31,14 +31,20 @@ export default function NavBar() {
         </ul>
       </div>
 
-      <div className="flex items-center ">
-        <img
-          src="./bx-menu.svg"
-          className="hidden max-xl:block mr-[2rem]"
-          alt="bx-menu"
-        />
-        <div className="relative flex items-center border-[3px] border-gray-600 rounded-md py-[.3rem] px-[.3rem] cursor-pointer ">
-          <div className="relative bg-red-600 w-9 h-[2.5rem] rounded-md text-white text-4xl">
+      <div className="flex items-center">
+        <div className=" flex-col mr-5 cursor-pointer hidden max-xl:block">
+          <div className="w-5 h-1 bg-white rounded-sm"></div>
+          <div className="w-5 h-1 bg-white rounded-sm my-[.2rem]"></div>
+          <div className="w-5 h-1 bg-white rounded-sm"></div>
+        </div>
+
+        <div className="overflow-hidden mr-5 ">
+          <div className="w-3 bg-white h-3 rounded-full absolute right-[15.95rem] max-md:right-[4.759rem]"></div>
+          <div className="w-5 bg-white h-5 rounded-full relative top-[.8rem] right-[.25rem] ml-1"></div>
+        </div>
+
+        <div className="relative flex items-center border-[3px] border-gray-600 rounded-md py-[.3rem] px-[.3rem] cursor-pointer max-md:hidden">
+          <div className="relative bg-red-600 w-9 h-[2.5rem] rounded-md text-white text-4xl hover:bg-red-800">
             <span className="absolute top-0 left-0 w-full h-full flex items-center justify-center ">
               +
             </span>
