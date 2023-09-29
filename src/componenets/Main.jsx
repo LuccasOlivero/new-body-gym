@@ -18,6 +18,9 @@ function Main() {
           <p className="text-black font-medium mb-2 ml-4 max-lg:ml-0 text-base uppercase max-lg:text-sm">
             find your energy
           </p>
+          <h3 className="text-6xl uppercase font-extrabold max-lg:text-3xl">
+            your best self starts here
+          </h3>
         </div>
 
         <div className="relative w-[10.5rem] h-[3rem]">
