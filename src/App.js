@@ -3,9 +3,10 @@ import NavBar from "./componenets/NavBar";
 
 export default function App() {
   return (
-    <div className="">
+    <div className="overflow-x-hidden relative">
       <NavBar></NavBar>
       <Main></Main>
+      asdas
     </div>
   );
 }

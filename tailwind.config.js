@@ -10,8 +10,12 @@ module.exports = {
       animation: {
         rotate: "rotate-center 0.6s ease-in-out both",
       },
-
-      keyframes: {},
+      backgroundImage: {
+        "main-bg": "url('/imgs/bg.jpg')",
+      },
+      boxShadow: {
+        test: "0px 0px 2.5px red",
+      },
     },
   },
   plugins: [],
