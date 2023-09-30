@@ -6,7 +6,6 @@ export default function App() {
     <div className="overflow-x-hidden relative">
       <NavBar></NavBar>
       <Main></Main>
-      asdas
     </div>
   );
 }
