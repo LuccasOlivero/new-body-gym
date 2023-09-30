@@ -1,9 +1,29 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faUser } from "@fortawesome/free-solid-svg-icons";
 import "./test.css";
+import { useState } from "react";
 
 export default function NavBar() {
+  const [color, setColor] = useState("text-white");
+  const [color2, setColor2] = useState("text-white");
+  function handleOver() {
+    setColor(() => "text-base");
+  }
+
+  function handleMouseOut() {
+    setColor(() => "text-white");
+  }
+  function handleOver2() {
+    setColor2(() => "text-base");
+  }
+
+  function handleMouseOut2() {
+    setColor2(() => "text-white");
+  }
+
   return (
-    <nav className="flex flex-row h-[5.5rem] items-center justify-between py-8 px-12 top-0 left-0 right-0 w-creen z-50 bg-transparent font-Montserrat fixed max-sm:p-1">
-      <picture className="h-[10rem] top-[.5rem] relative cursor-pointer max-md:h-[16rem] max-md:top-8 ">
+    <nav className="flex flex-row h-[5.5rem] items-center justify-between py-8 px-12 top-0 left-0 right-0 w-creen z-50 bg-transparent font-Montserrat fixed max-sm:px-3">
+      <picture className="h-[10rem] top-[.5rem] relative cursor-pointer max-md:h-[14rem] max-md:top-8 max-sm:right-5">
         <img
           src="/logo.png"
           alt="logo.png"
@@ -39,20 +59,19 @@ export default function NavBar() {
       </div>
 
       <div className="flex items-center relative max-md:top-3">
-        <picture className="mr-5 h-6 w-6 hidden max-xl:block max-md:h-7 max-md:w-7 max-sm:mr-2">
-          <img
-            src="/bars-solid.png"
-            alt="bars-solid.png"
-            className="w-full h-full block "
-          />
+        <picture
+          className={`mr-5 cursor-pointer hidden max-xl:block max-sm:mr-4 transition-all duration-150 ease-linear ${color2}`}
+          onMouseOver={handleOver2}
+          onMouseOut={handleMouseOut2}
+        >
+          <FontAwesomeIcon icon={faBars} size="xl" />
         </picture>
-
-        <picture className="mr-5 h-[1.9rem] w-[1.9rem] cursor-pointer relative top-[-5px] max-md:h-8 max-md:w-8 max-sm:mr-2">
-          <img
-            src="/user.png"
-            alt="user.png"
-            className="w-full h-full block "
-          />
+        <picture
+          className={`mr-5 cursor-pointer relative max-sm:mr-4 transition-all duration-150 ease-linear ${color}`}
+          onMouseOver={handleOver}
+          onMouseOut={handleMouseOut}
+        >
+          <FontAwesomeIcon icon={faUser} size="lg" />
         </picture>
 
         <div className="relative flex items-center border-[3px] border-gray-600 rounded-md py-[.3rem] px-[.3rem] cursor-pointer max-md:hidden text-white text-sm font-semibold hover:text-[#ff0336] hover:border-gray-700 transition-all duration-150 ease-linear">
