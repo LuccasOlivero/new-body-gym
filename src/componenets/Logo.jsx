@@ -1,4 +1,4 @@
-function Logo() {
+function Logo({ color = "white" }) {
   return (
     <picture className="absolute w-[12rem] h-[2.5rem] rotate-6 top-[-.7rem] z-[-5]">
       <img
