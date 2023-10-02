@@ -6,7 +6,6 @@ export default function App() {
   return (
     <>
       <Main></Main>
-      <Cards></Cards>
       <About></About>
     </>
   );

@@ -14,6 +14,7 @@ module.exports = {
         "back-r": "url('/imgs/backR.jpg')",
         "legs-p": "url('/imgs/legs.jpg')",
         "back-w": "url('/imgs/backW.jpg')",
+        grey: "url('/imgs/grey.jpg')",
       },
       boxShadow: {
         test: "0px 0px 2.5px red",
