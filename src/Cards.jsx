@@ -13,7 +13,7 @@ const text3 =
 
 function Cards() {
   return (
-    <div className="flex relative top-[-7rem] justify-between gap-10">
+    <div className="flex relative top-[-7rem] justify-between gap-10 max-xl:grid max-xl:justify-center max-xl:gap-0 ">
       <Card text={text1} icon={faClockRotateLeft} img={"bg-back-r"}>
         progression
       </Card>

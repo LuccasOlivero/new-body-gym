@@ -10,11 +10,11 @@ import Cards from "../Cards";
 function About() {
   return (
     <>
-      <div className="bg-grey bg-cover h-[105vh] w-full px-[10rem]">
+      <div className="bg-grey h-full bg-cover relative w-full px-[10rem] ">
         <Cards></Cards>
 
-        <div className="flex items-center justify-between">
-          <div className="w-[35rem]">
+        <div className="flex items-center justify-between max-xl:justify-center">
+          <div className="w-[35rem] max-xl:w-[23rem]">
             <p className="uppercase font-extrabold text-[#ff0336]">
               who we are
             </p>
@@ -26,7 +26,7 @@ function About() {
               program designed to help you reach your fitness goals.
             </p>
 
-            <div className="flex gap-6 justify-center mb-10">
+            <div className="flex gap-6 justify-center mb-10 max-sm:grid">
               <MiniCard icon={faUserGroup}>professional trainers</MiniCard>
               <MiniCard icon={faWeightHanging}>modern equipments</MiniCard>
               <MiniCard icon={faGears}>fancy gym machines</MiniCard>
@@ -36,7 +36,7 @@ function About() {
               <button
                 className="w-full h-full mt-9 bg-gray-950 text-white 
                 uppercase font-bold text-sm   
-            after:absolute after:transform after:translate-x-[-5rem] after:translate-y-[-1.8rem] after:transition-transform after:duration-500 after:ease-in-out                      after:hover:translate-x-[-8rem]              after:hover:translate-y-[-.8rem] after:border after:border-gray-950 after:w-[10rem] after:h-[2.8rem] hover:text-[#c92142] transition-all duration-300 ease-linear after:z-50"
+            after:absolute after:transform after:translate-x-[-5rem] after:translate-y-[-1.8rem] after:transition-transform after:duration-500 after:ease-in-out                      after:hover:translate-x-[-8rem]              after:hover:translate-y-[-.8rem] after:border after:border-gray-950 after:w-[10rem] after:h-[2.8rem] hover:text-[#c92142] transition-all duration-300 ease-linear after:z-50 max-xl:hidden"
               >
                 take a tour
               </button>

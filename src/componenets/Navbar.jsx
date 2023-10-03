@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faUser } from "@fortawesome/free-solid-svg-icons";
 import "./test.css";
 import { useState } from "react";
+import LogoGym from "./LogoGym";
 
 export default function NavBar() {
   const [color, setColor] = useState("text-white");
@@ -24,12 +25,7 @@ export default function NavBar() {
   return (
     <nav className="flex flex-row h-[5.5rem] items-center justify-between py-8 px-12 top-0 left-0 right-0 w-screen z-50 bg-transparent font-Montserrat fixed max-sm:px-3 ">
       <picture className="h-[10rem] top-[.5rem] relative cursor-pointer max-md:h-[14rem] max-md:top-8 max-sm:right-5">
-        <img
-          src="/logo.png"
-          alt="logo.png"
-          className="w-full h-full block"
-          style={{ filter: "drop-shadow(0px 0px 8px red)" }}
-        />
+        <LogoGym />
       </picture>
 
       <div className="flex items-center max-xl:hidden">
