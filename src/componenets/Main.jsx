@@ -1,14 +1,13 @@
 import Button from "./Button";
-
 import Logo from "./Logo";
 import MainText from "./MainText";
-import NavBar from "./NavBar";
-import "./test.css";
+import About from "./About";
+import Pricing from "./Pricing";
+import Footer from "./Footer";
 
 function Main() {
   return (
     <>
-      <NavBar></NavBar>
       <main className="w-full h-[110vh] relative flex items-center max-lg:justify-center">
         <span className="bg-cover bg-top bg-main-bg w-full h-full absolute z-[-10] bg-no-repeat"></span>
 
@@ -18,6 +17,8 @@ function Main() {
           <Button>Our clases</Button>
         </section>
       </main>
+      <About />
+      <Pricing />
     </>
   );
 }
