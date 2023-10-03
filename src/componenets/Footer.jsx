@@ -31,7 +31,7 @@ function Footer() {
   }
 
   return (
-    <div className="w-full bg-black h-[33rem] flex justify-between px-[10rem] py-[8rem] relative mt-10 max-lg:flex-col max-lg:py-0  max-lg:items-center">
+    <section className="w-full bg-black h-[33rem] flex justify-between px-[10rem] py-[8rem] relative mt-10 max-lg:flex-col max-lg:py-0  max-lg:items-center">
       <div className="w-[20rem] text-white flex flex-col justify-between h-16 relative items-center">
         <div className="w-[200px] h-[250px]">
           <LogoGym />
@@ -72,7 +72,7 @@ function Footer() {
       <div className="w-[15rem] text-white flex flex-col justify-evenly relative items-center">
         <h3 className="relative text-[22px] font-bold">
           Our Classes
-          <span className="absolute bottom-[0px] left-[0rem] w-[5rem] h-[3px] bg-red-600 transform -translate-y-1/2 "></span>
+          <span className="absolute bottom-[0px] left-[0rem] w-[3rem] h-[3px] bg-red-600 transform -translate-y-1/2 "></span>
         </h3>
         <p className="hover:font-extrabold hover:text-red-600">
           Fitness Classes
@@ -92,7 +92,7 @@ function Footer() {
       <div className="w-[15rem] text-white flex flex-col justify-evenly relative items-center max-lg:mb-[3rem]">
         <h3 className="relative text-[22px] font-bold">
           Workin hours
-          <span className="absolute  bottom-[0px] left-[0rem] w-[5rem] h-[3px] bg-red-600 transform -translate-y-1/2 "></span>
+          <span className="absolute  bottom-[0px] left-[0rem] w-[3rem] h-[3px] bg-red-600 transform -translate-y-1/2 "></span>
         </h3>
         <p>Monday - Friday:</p>
         <p className="hover:font-extrabold hover:text-red-600">
@@ -104,7 +104,7 @@ function Footer() {
         </p>
         <p>Sunday - Closed</p>
       </div>
-    </div>
+    </section>
   );
 }
 

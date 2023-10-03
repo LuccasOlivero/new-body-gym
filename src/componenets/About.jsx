@@ -10,7 +10,7 @@ import Cards from "../Cards";
 function About() {
   return (
     <>
-      <div className="bg-grey h-full bg-cover relative w-full px-[10rem] ">
+      <section className="bg-grey h-full bg-cover relative w-full px-[10rem] ">
         <Cards></Cards>
 
         <div className="flex items-center justify-between max-xl:justify-center">
@@ -44,7 +44,7 @@ function About() {
           </div>
           <AboutImage>{faCircleHalfStroke}</AboutImage>
         </div>
-      </div>
+      </section>
     </>
   );
 }
