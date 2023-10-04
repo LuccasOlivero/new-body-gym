@@ -3,12 +3,9 @@ import Days from "../componenets/Days";
 function SchedulePage() {
   return (
     <>
-      <span className="block h-[24rem] w-full bg-about bg-center bg-cover"></span>
-      <h2
-        className={`relative text-center font-bold text-4xl top-[-3rem] text-white`}
-      >
-        Schedule by days
-      </h2>
+      <span className="h-[24rem] w-full bg-about bg-center bg-cover text-center text-white font-bold text-4xl flex justify-center items-end pb-3">
+        Schedule by day
+      </span>
       <Days />
     </>
   );

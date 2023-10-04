@@ -4,9 +4,9 @@ import "./test.css";
 
 function Days() {
   return (
-    <>
-      <section className="px-[10rem] h-[40rem] flex flex-col max-lg:px-[5rem] max-sm:h-full max-sm:mb-6 max-sm:px-[2rem]">
-        <div className="flex w-full h-9 mb-[1rem] justify-center max-lg:grid max-lg:grid-cols-3 max-sm:grid-cols-2 z-50">
+    <div className="flex justify-center mt-8">
+      <section className="px-[10rem] h-[35rem] flex flex-col max-lg:px-[5rem] max-sm:h-full max-sm:mb-6 max-sm:px-[2rem] w-full max-w-[1900px]">
+        <div className="flex w-full h-9 mb-5 justify-center max-lg:grid max-lg:grid-cols-3 max-sm:grid-cols-2 z-50">
           <NavLink
             to="monday"
             className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] hover:bg-[#ff0336] ease-in duration-200 hover:shadow-2xl hover:text-white "
@@ -46,7 +46,7 @@ function Days() {
         </div>
         <Outlet />
       </section>
-    </>
+    </div>
   );
 }
 

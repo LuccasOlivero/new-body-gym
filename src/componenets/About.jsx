@@ -9,11 +9,11 @@ import {
 import Cards from "../Cards";
 function About() {
   return (
-    <>
-      <section className="bg-grey h-full bg-cover relative w-full px-[10rem] ">
+    <div className="bg-grey bg-cover bg-center w-full h-full flex justify-center">
+      <section className="h-full bg-cover relative w-full px-[10rem] max-w-[1900px]">
         <Cards></Cards>
 
-        <div className="flex items-center justify-between max-xl:justify-center">
+        <div className="flex items-center justify-between max-xl:justify-center ">
           <div className="w-[35rem] max-xl:w-[23rem]">
             <p className="uppercase font-extrabold text-[#ff0336]">
               who we are
@@ -44,7 +44,7 @@ function About() {
           <AboutImage>{faCircleHalfStroke}</AboutImage>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
