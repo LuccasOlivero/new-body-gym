@@ -13,14 +13,14 @@ const text3 =
 
 function Cards() {
   return (
-    <div className="flex relative top-[-7rem] justify-between gap-10 max-xl:grid max-xl:justify-center max-xl:gap-0 ">
-      <Card text={text1} icon={faClockRotateLeft} img={"bg-back-r"}>
+    <div className="flex relative top-[-7rem] justify-between gap-10 max-xl:grid max-xl:justify-center max-xl:gap-0">
+      <Card text={text1} icon={faClockRotateLeft} img="back-r">
         progression
       </Card>
-      <Card text={text2} icon={faDumbbell} img={"bg-legs-p"}>
+      <Card text={text2} icon={faDumbbell} img="legs-p">
         workout
       </Card>
-      <Card text={text3} icon={faListCheck} img={"bg-back-w"}>
+      <Card text={text3} icon={faListCheck} img="back-w">
         nutritions
       </Card>
     </div>

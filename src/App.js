@@ -20,9 +20,10 @@ export default function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Main />}></Route>
+          <Route index element={<Main />}></Route>
           <Route path="/about" element={<AboutPage />} />
           <Route path="/schedule" element={<SchedulePage />}>
+            <Route index element={<Monday />} />
             <Route path="monday" element={<Monday />} />
             <Route path="tuesday" element={<Tuesday />} />
             <Route path="wednesday" element={<Wednesday />} />
