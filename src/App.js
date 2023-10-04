@@ -6,6 +6,12 @@ import SchedulePage from "./pages/SchedulePage";
 import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/ContactPage";
 import PageNotFound from "./pages/PageNotFound";
+import Monday from "./componenets/Monday";
+import Tuesday from "./componenets/Tuesday";
+import Wednesday from "./componenets/Wednesday";
+import Thursday from "./componenets/Thursday";
+import Friday from "./componenets/Friday";
+import Saturday from "./componenets/Saturday";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function App() {
@@ -16,7 +22,14 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/schedule" element={<SchedulePage />} />
+          <Route path="/schedule" element={<SchedulePage />}>
+            <Route path="monday" element={<Monday />} />
+            <Route path="tuesday" element={<Tuesday />} />
+            <Route path="wednesday" element={<Wednesday />} />
+            <Route path="thursday" element={<Thursday />} />
+            <Route path="friday" element={<Friday />} />
+            <Route path="saturday" element={<Saturday />} />
+          </Route>
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<PageNotFound />} />

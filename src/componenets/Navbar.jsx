@@ -43,8 +43,8 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`flex flex-row h-[5.5rem] items-center justify-between py-8 px-12 top-0 left-0 right-0 w-screen z-50 font-Montserrat fixed max-sm:px-3 
-    bg-${isCrolled ? "black" : "transparent"}`}
+      className={`flex flex-row h-[5.5rem] items-center justify-between py-8 px-12 top-0 left-0 right-0 w-screen z-[100] font-Montserrat fixed max-sm:px-3 
+    bg-${isCrolled ? "black" : "transparent"} max-md:h-[6.5rem]`}
     >
       <picture className="h-[10rem] top-[.5rem] relative cursor-pointer max-md:h-[14rem] max-md:top-8 max-sm:right-5">
         <LogoGym />
@@ -52,19 +52,19 @@ export default function NavBar() {
 
       <div className="flex items-center max-xl:hidden">
         <ul className="flex gap-6 text-base gap-x-11 font-semibold max-2xl:gap-5 ">
-          <li className="text-yellow-50 cursor-pointer hover:text-[#ff0336] transition-all duration-300 ease-linear">
+          <li className="text-white cursor-pointer hover:text-[#ff0336] transition-all duration-300 ease-linear">
             <NavLink to="/">Home</NavLink>
           </li>
-          <li className="text-yellow-50 cursor-pointer hover:text-[#ff0336] transition-all duration-300 ease-linear">
+          <li className="text-white cursor-pointer hover:text-[#ff0336] transition-all duration-300 ease-linear">
             <NavLink to="/about">About</NavLink>
           </li>
-          <li className="text-yellow-50 cursor-pointer hover:text-[#ff0336] transition-all duration-300 ease-linear">
-            <NavLink to="/schedule">Schedule</NavLink>
+          <li className="text-white cursor-pointer hover:text-[#ff0336] transition-all duration-300 ease-linear">
+            <NavLink to="/schedule/monday">Schedule</NavLink>
           </li>
-          <li className="text-yellow-50 cursor-pointer hover:text-[#ff0336] transition-all duration-300 ease-linear">
+          <li className="text-white cursor-pointer hover:text-[#ff0336] transition-all duration-300 ease-linear">
             <NavLink to="/pricing">Pricing</NavLink>
           </li>
-          <li className="text-yellow-50 cursor-pointer hover:text-[#ff0336] transition-all duration-300 ease-linear">
+          <li className="text-white cursor-pointer hover:text-[#ff0336] transition-all duration-300 ease-linear">
             <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>

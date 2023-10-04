@@ -2,9 +2,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function AboutCard({ children, icon, title }) {
   return (
-    <div className="flex flex-col bg-yellow-50 p-12 items-center justify-evenly">
-      <FontAwesomeIcon icon={icon} size="2x" color="#ff0336" />
-      <h3 className="font-semibold text-2xl">{title}</h3>
+    <div className="flex flex-col bg-yellow-50 p-12 items-center justify-evenly max-sm:p-4">
+      <div className="flex justify-center items-center">
+        <FontAwesomeIcon icon={icon} size="xl" color="#ff0336" />
+        <h3 className="font-semibold text-2xl max-xl:text-xl ml-[1.5rem] max-md:text-lg max-sm:text-sm">
+          {title}
+        </h3>
+      </div>
       <p className="text-sm font-light">{children}</p>
     </div>
   );

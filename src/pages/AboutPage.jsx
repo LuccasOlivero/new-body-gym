@@ -10,45 +10,32 @@ function AboutPage() {
         About us
       </h2>
       <section className="w-[70%] m-auto shadow-2xl">
-        <div className="grid grid-cols-2 grid-rows-3 w-[80&] h-[60rem] mb-[3rem]">
+        <div className="grid grid-cols-2 grid-rows-3 w-[80&] h-[70rem] mb-[3rem] max-xl:grid-cols-1 max-xl:grid-rows-6 max-sm:h-[75rem]">
           <AboutCard icon={faMap} title="The Birth of a Dream">
-            Years ago, in a small corner of the city, three friends with a
-            shared passion for fitness dreamed of a place where people could
-            transform their lives through exercise. They pooled their savings
-            and dedicated countless hours to bring their vision to life: a
-            welcoming and motivating gym. They equipped the space with
-            top-quality weights and machines, hired passionate trainers, and
-            finally opened the doors to their gym. Since then, their small
-            project has grown into a thriving fitness center where the community
-            finds health and wellness.
+            Years ago, three fitness enthusiasts dreamed of creating a welcoming
+            gym. They pooled savings, dedicated hours, and opened a thriving
+            fitness center for the community's health and wellness.
           </AboutCard>
-          <span className="bg-aboutImg1 w-full h-full  bg-center bg-cover" />
+          <span className="bg-aboutImg1 w-full h-full  bg-center bg-cover bg-no-repeat" />
 
-          <span className="bg-aboutImg2 w-full h-full  bg-center bg-cover" />
           <AboutCard icon={faUsers} title="A Haven of Strength and Community">
-            Within the walls of that modest gym, the community found a place
-            where their goals became attainable, and their bonds grew stronger.
-            The friends invested in high-quality equipment and hired committed
-            trainers to guide their members toward a healthier lifestyle. Over
-            time, the gym gained popularity, attracting people of all ages and
-            fitness levels. The vision of three friends became an inspiring
-            story of perseverance and success, turning their passion into a
-            lasting legacy of well-being.
+            In a modest gym, community goals and bonds thrived. Friends invested
+            in quality equipment, hired trainers, and grew popular among all
+            ages. Three friends' vision became an inspiring legacy of
+            well-being.
           </AboutCard>
+          <span className="bg-aboutImg2 w-full h-full  bg-center bg-cover bg-no-repeat" />
+
           <AboutCard
             icon={faChartLine}
             title="From Small Gym to Lasting Success"
           >
-            As the gym expanded, it became a hub for fitness enthusiasts,
-            offering a wide range of classes and programs to cater to diverse
-            interests and abilities. What started as a dream among friends
-            blossomed into a beacon of health and vitality for the entire
-            community. Their dedication and hard work transformed their gym from
-            a small, humble space into a respected institution, leaving a
-            lasting impact on the lives of many.
+            Expanding gym became fitness hub with diverse classes. Friend's
+            dream turned into community health beacon. Dedication transformed
+            small gym into respected institution, impacting many.
           </AboutCard>
 
-          <span className="bg-aboutImg3 w-full h-full  bg-center bg-cover" />
+          <span className="bg-aboutImg3 w-full h-full  bg-center bg-cover bg-no-repeat" />
         </div>
       </section>
     </>
