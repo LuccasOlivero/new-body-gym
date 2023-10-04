@@ -43,8 +43,8 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`flex flex-row h-[5.5rem] items-center justify-between py-8 px-12 top-0 left-0 right-0 w-screen z-[100] font-Montserrat fixed max-sm:px-3 
-    bg-${isCrolled ? "black" : "transparent"} max-md:h-[6.5rem]`}
+      className={`flex flex-row h-[5.5rem] items-centerpy-8 px-12 justify-between top-0 left-0 right-0 w-screen z-[100] font-Montserrat fixed max-sm:px-3 
+    bg-${isCrolled ? "black" : "transparent"} max-md:h-[6.5rem] max-w-[1800px]`}
     >
       <picture className="h-[10rem] top-[.5rem] relative cursor-pointer max-md:h-[14rem] max-md:top-8 max-sm:right-5">
         <LogoGym />

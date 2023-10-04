@@ -2,7 +2,7 @@ import PricingCard from "./PricingCard";
 
 function Pricing() {
   return (
-    <div className="w-full h-full bg-gray-50 bg-cover relative">
+    <div className="w-full h-full bg-gray-50 bg-cover relative ">
       <div className="text-center flex flex-col py-16">
         <p className=" uppercase font-extrabold text-[#ff0336]">pricing</p>
         <h3 className="text-black font-bold text-4xl pb-2">

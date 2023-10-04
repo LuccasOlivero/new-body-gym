@@ -3,13 +3,12 @@ import Logo from "./Logo";
 import MainText from "./MainText";
 import About from "./About";
 import Pricing from "./Pricing";
-import Footer from "./Footer";
 
 function Main() {
   return (
     <>
       <main className="w-full h-[110vh] relative flex items-center max-lg:justify-center">
-        <span className="bg-cover bg-top bg-main-bg w-full h-full absolute z-[-10] bg-no-repeat"></span>
+        <span className="bg-cover bg-top bg-main-bg w-full h-full absolute z-[-10] bg-no-repeat "></span>
 
         <section className="relative flex-col w-[41rem] max-lg:mx-8 pl-[10rem] max-lg:pl-[3rem] max-sm:p-0">
           <Logo />

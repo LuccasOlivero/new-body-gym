@@ -31,7 +31,7 @@ function Footer() {
   }
 
   return (
-    <section className="w-full bg-black h-[33rem] flex justify-between px-[10rem] py-[8rem] relative max-lg:flex-col max-lg:py-0 max-lg:items-center">
+    <section className="w-full bg-black h-[33rem] flex justify-between px-[10rem] py-[8rem] relative max-lg:flex-col max-lg:py-0 max-lg:items-center ">
       <div className="w-[20rem] text-white flex flex-col justify-between h-16 relative items-center">
         <div className="w-[200px] h-[250px]">
           <LogoGym />
