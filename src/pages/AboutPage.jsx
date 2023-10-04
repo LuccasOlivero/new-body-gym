@@ -7,7 +7,7 @@ function AboutPage() {
         About us
       </span>
 
-      <div className="w-full flex justify-center items-center my-10 relative ">
+      <div className="w-full flex justify-center items-center my-10 relative">
         <section className="w-full h-[75rem] max-w-[1900px] ">
           <div className="grid grid-cols-2 grid-rows-3 w-[80&] h-full max-xl:grid-cols-1 max-xl:grid-rows-6 max-sm:h-[75rem] mx-[10rem] shadow-2xl">
             <AboutCard icon={faMap} title="The Birth of a Dream">

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import MiniCard from "./MiniCard";
 import AboutImage from "./AboutImage";
 import {
@@ -33,12 +34,13 @@ function About() {
             </div>
 
             <div className="relative w-[10.5rem] h-[3rem]">
-              <button
-                className="w-full h-full mt-9 bg-gray-950 text-white 
-                uppercase font-bold text-sm after:absolute after:transform after:translate-x-[-6rem] after:translate-y-[-1.8rem] after:transition-transform after:duration-500 after:ease-in-out after:hover:translate-x-[-8rem] after:hover:translate-y-[-.8rem] after:border after:border-gray-950 after:w-[10rem] after:h-[2.8rem] hover:text-[#c92142] transition-all duration-300 ease-linear after:z-50 max-xl:hidden"
+              <NavLink
+                to="/schedule"
+                className="w-full h-full mt-9 bg-[#292929] text-white uppercase font-bold text-sm   
+       hover:bg-[#1c1c1c] transition-all duration-300 ease-linear flex justify-center items-center"
               >
                 take a tour
-              </button>
+              </NavLink>
             </div>
           </div>
           <AboutImage>{faCircleHalfStroke}</AboutImage>

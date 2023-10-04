@@ -33,8 +33,8 @@ function Footer() {
   return (
     <div className="bg-black w-full flex justify-center">
       <section className="w-full h-[33rem] flex justify-between px-[10rem] py-[8rem] relative max-lg:flex-col max-lg:py-0 max-lg:items-center max-w-[1900px]">
-        <div className="w-[20rem] text-white flex flex-col justify-evenly h-full">
-          <div className="w-[200px] relative top-[-.8rem]">
+        <div className="w-[20rem] text-white flex flex-col justify-evenly h-full max-lg:items-center">
+          <div className="w-[200px] relative top-[-.8rem] max-lg:top-0 max-lg:bottom-0">
             <LogoGym />
           </div>
 
@@ -70,7 +70,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="w-[15rem] text-white flex flex-col justify-evenly relative items-center h-full">
+        <div className="w-[15rem] text-white flex flex-col justify-evenly relative items-center h-full max-lg:mb-4">
           <h3 className="relative text-[22px] font-bold">
             Our Classes
             <span className="absolute bottom-[0px] left-[0rem] w-[3rem] h-[3px] bg-red-600 transform -translate-y-1/2 "></span>

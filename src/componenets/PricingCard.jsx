@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 function PricingCard({
   children,
   type,
@@ -29,14 +31,25 @@ function PricingCard({
             <p className="max-sm:text-xs">{item3}</p>
           </div>
 
-          <div className="relative w-full h-[3rem] min-h-[3rem] max-sm:h-[2rem] max-sm:min-h-[2rem] ">
+          {/* <div className="relative w-full h-[3rem] min-h-[3rem] max-sm:h-[2rem] max-sm:min-h-[2rem] ">
             <button
               className="w-full h-full bg-[#c92142] text-white 
             uppercase font-bold text-sm hover:bg-[#ad203c] transition-all duration-300 ease-linear max-sm:text-xs "
             >
               purchase now
             </button>
+          </div> */}
+
+          <div className="relative w-full h-[3rem] min-h-[3rem] max-sm:h-[2rem] max-sm:min-h-[2rem] ">
+            <NavLink
+              to="/pricing"
+              className="w-full h-full bg-[#c92142] text-white 
+                uppercase font-bold text-sm hover:bg-[#ad203c] transition-all duration-300 ease-linear max-sm:text-xs  flex justify-center items-center"
+            >
+              take a tour
+            </NavLink>
           </div>
+
           <span className="absolute top-0 bg-yellow-500 w-full text-white font-semibold">
             {children}
           </span>
