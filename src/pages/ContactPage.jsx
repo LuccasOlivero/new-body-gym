@@ -14,14 +14,14 @@ function ContactPage() {
               <h3 className="text-black text-[36px] font-bold leading-[1.2] ">
                 We are here for help you! To Shape <br /> Your Body.
               </h3>
-              <p className="text-[16px] w-[95%] text-[#646464] font-medium my-[40px]">
+              <p className="text-[16px] w-[95%] text-[#646464] font-medium my-[40px] max-xl:my-[30px]">
                 At Gymate, we are dedicated to helping you achieve the body of
                 your dreams. Our expert trainers and nutritionists will work
                 with you to create a personalized fitness and nutrition plan
                 that helps you reach your specific goals.
               </p>
 
-              <div className="grid grid-cols-2 ">
+              <div className="grid grid-cols-2">
                 <ContactText
                   title="New York City, USA"
                   text1="85 Briston Mint Street,"

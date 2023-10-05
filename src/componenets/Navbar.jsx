@@ -6,7 +6,7 @@ import LogoGym from "./LogoGym";
 import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
-  const [sideBar, setSideBar] = useState(false);
+  const [active, setActive] = useState("translate-x-[-100%]");
   const [isCrolled, setIsScrolled] = useState(false);
   const [colors, setColors] = useState({
     button1: "text-white",
@@ -44,7 +44,7 @@ export default function NavBar() {
   }, []);
 
   function handleSideBar() {
-    setSideBar(() => !sideBar);
+    setActive("translate-x-0");
   }
 
   return (
@@ -99,8 +99,7 @@ export default function NavBar() {
           </NavLink>
         </div>
       </nav>
-
-      {sideBar && <SideBar setSideBar={setSideBar} />}
+      <SideBar setActive={setActive} active={active} />
     </>
   );
 }

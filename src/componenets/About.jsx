@@ -10,7 +10,7 @@ import {
 import Cards from "../Cards";
 function About() {
   return (
-    <div className="bg-grey bg-cover bg-center w-full h-full flex justify-center">
+    <div className="bg-grey bg-cover bg-center w-full h-full flex justify-center max-xl:pb-11">
       <section className="h-full bg-cover relative w-full px-[10rem] max-w-[1900px]">
         <Cards></Cards>
 
@@ -33,11 +33,10 @@ function About() {
               <MiniCard icon={faGears}>fancy gym machines</MiniCard>
             </div>
 
-            <div className="relative w-[10.5rem] h-[3rem]">
+            <div className="relative w-[10.5rem] h-[3rem] ">
               <NavLink
                 to="/schedule"
-                className="w-full h-full mt-9 bg-[#292929] text-white uppercase font-bold text-sm   
-       hover:bg-[#1c1c1c] transition-all duration-300 ease-linear flex justify-center items-center"
+                className="w-full h-full mt-9 bg-[#292929] text-white uppercase font-bold text-sm hover:bg-[#1c1c1c] transition-all duration-300 ease-linear flex justify-center items-center "
               >
                 take a tour
               </NavLink>
