@@ -6,7 +6,7 @@ import LogoGym from "./LogoGym";
 import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
-  const [sideBar, setSideBar] = useState(true);
+  const [sideBar, setSideBar] = useState(false);
   const [isCrolled, setIsScrolled] = useState(false);
   const [colors, setColors] = useState({
     button1: "text-white",
