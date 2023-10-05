@@ -34,7 +34,7 @@ function Footer() {
     <div className="bg-black w-full flex justify-center">
       <section className="w-full h-[33rem] flex justify-between px-[10rem] py-[8rem] relative max-lg:flex-col max-lg:py-0 max-lg:items-center max-w-[1900px]">
         <div className="w-[20rem] text-white flex flex-col justify-evenly h-full max-lg:items-center">
-          <div className="w-[200px] relative top-[-.8rem] max-lg:top-0 max-lg:bottom-0">
+          <div className="w-[200px] relative top-[-.8rem] max-lg:top-0 max-lg:bottom-0 ">
             <LogoGym />
           </div>
 
@@ -43,25 +43,25 @@ function Footer() {
               Take your health and body to the next level with our comprehensive
               program designed to help you reach your fitness goals.
             </p>
-            <div className="flex justify-start gap-10  pb-3">
+            <div className="flex justify-start gap-10 pb-3 ">
               <picture
                 onMouseOver={handleOver1}
                 onMouseOut={handleOut1}
-                className={color}
+                className={`${color} cursor-pointer`}
               >
                 <FontAwesomeIcon icon={faUserGroup} size="xl" />
               </picture>
               <picture
                 onMouseOver={handleOver2}
                 onMouseOut={handleOut2}
-                className={color2}
+                className={`${color2} cursor-pointer`}
               >
                 <FontAwesomeIcon icon={faEnvelope} size="xl" />
               </picture>
               <picture
                 onMouseOver={handleOver3}
                 onMouseOut={handleOut3}
-                className={color3}
+                className={`${color3} cursor-pointer`}
               >
                 <FontAwesomeIcon icon={faPhone} size="xl" />
               </picture>

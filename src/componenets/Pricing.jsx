@@ -28,8 +28,6 @@ function Pricing() {
           top="2"
           width="22"
           item1="- Weight Loss"
-          item2="- Trainer"
-          best=""
         >
           Best-Selling
         </PricingCard>
@@ -39,7 +37,6 @@ function Pricing() {
           bg={"bg-back-w"}
           item1="- Weight Loss"
           item2="- Trainer"
-          item3="- Cycling"
         ></PricingCard>
       </div>
     </div>
