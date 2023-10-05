@@ -19,6 +19,7 @@ module.exports = {
         aboutImg1: "url('/imgs/us1.jpg')",
         aboutImg2: "url('/imgs/us2.jpg')",
         aboutImg3: "url('/imgs/us3.jpg')",
+        notFound: "url('/imgs/notFound.jpg')",
       },
       boxShadow: {
         test: "0px 0px 2.5px red",

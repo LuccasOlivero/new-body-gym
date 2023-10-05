@@ -3,7 +3,10 @@ import ContactText from "../componenets/ContactText";
 function ContactPage() {
   return (
     <>
-      <span className="h-[24rem] w-full bg-about bg-center bg-cover text-center text-white font-bold text-4xl flex justify-center items-end pb-3">
+      <span
+        rel="preload"
+        className="h-[24rem] w-full bg-about bg-center bg-cover text-center text-white font-bold text-4xl flex justify-center items-end pb-3"
+      >
         Contact
       </span>
 
