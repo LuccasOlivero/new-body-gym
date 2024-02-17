@@ -12,7 +12,7 @@ function AboutPage() {
 
       <div className="w-full flex justify-center items-center my-10 relative">
         <section className="w-full h-[75rem] max-w-[1900px] max-sm:h-[50rem]">
-          <div className="grid grid-cols-2 grid-rows-3 w-[80&] h-full max-xl:grid-cols-1 max-xl:grid-rows-4 max-sm:h-[50rem] mx-[10rem] shadow-2xl max-md:grid-cols-2 max-md:mx-[2rem]  max-md:grid-rows-2">
+          <div className="grid grid-cols-2 grid-rows-3 w-[80&] h-full max-xl:grid-cols-1 max-xl:grid-rows-4 max-sm:h-[50rem] mx-[10rem] shadow-2xl max-md:grid-cols-2 max-md:mx-[2rem] max-md:grid-rows-2">
             <AboutCard icon={faMap} title="The Birth of a Dream">
               Years ago, three fitness enthusiasts dreamed of creating a
               welcoming gym. They pooled savings, dedicated hours, and opened a
