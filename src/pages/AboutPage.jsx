@@ -1,8 +1,11 @@
 import { faMap, faUsers, faChartLine } from "@fortawesome/free-solid-svg-icons";
 import AboutCard from "../componenets/AboutCard";
+import NavBar from "../componenets/NavBar";
+
 function AboutPage() {
   return (
     <>
+      <NavBar />
       <span
         rel="preload"
         className="h-[24rem] w-full bg-about bg-center bg-cover text-center text-white font-bold text-4xl flex justify-center items-end pb-3"

@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import LogoGym from "./LogoGym";
 import { NavLink } from "react-router-dom";
 
-export default function NavBar() {
+function NavBar() {
   const [active, setActive] = useState("translate-x-[-100%]");
   const [isCrolled, setIsScrolled] = useState(false);
   const [colors, setColors] = useState({
@@ -103,3 +103,5 @@ export default function NavBar() {
     </>
   );
 }
+
+export default NavBar;

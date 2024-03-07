@@ -3,10 +3,13 @@ import Logo from "./Logo";
 import MainText from "./MainText";
 import About from "./About";
 import Pricing from "./Pricing";
+import NavBar from "./NavBar";
 
 function Main() {
   return (
     <>
+      <NavBar />
+
       <main className="w-full h-[110vh] relative flex items-center max-lg:justify-center justify-center">
         <span
           rel="preload"
