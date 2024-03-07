@@ -13,7 +13,7 @@ import Friday from "./componenets/Friday";
 import Saturday from "./componenets/Saturday";
 import { useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
-// import NavBar from "./componenets/NavBar";
+import NavBar from "./componenets/NavBar";
 
 // Component ScrollToTopOnNavigate to reset the scroll
 function ScrollToTopOnNavigate() {
@@ -30,7 +30,7 @@ export default function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <NavBar /> */}
+        <NavBar />
         <ScrollToTopOnNavigate />
         <Routes>
           <Route index element={<Main />}></Route>
