@@ -2,6 +2,8 @@ import ContactText from "../componenets/ContactText";
 import NavBar from "../componenets/NavBar";
 
 function ContactPage() {
+  const inputStyles =
+    "w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-6";
   return (
     <>
       <NavBar />
@@ -52,18 +54,15 @@ function ContactPage() {
               </h3>
               <input
                 type="text"
-                className="w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-6"
+                className={inputStyles}
                 placeholder="Full Name"
               />
               <input
                 type="email"
-                className="w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-6"
+                className={inputStyles}
                 placeholder="Email Address"
               />
-              <select
-                id=""
-                className="w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-6"
-              >
+              <select id="" className={inputStyles}>
                 <option value="" selected disabled>
                   Select Class
                 </option>
@@ -74,14 +73,14 @@ function ContactPage() {
                 <option value="">Workout</option>
                 <option value="">Meditation</option>
               </select>
-              <input
+              <textarea
                 type="text"
                 className="w-full py-[12px] px-[20px] h-[140px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-6"
                 placeholder="Comment"
               />
 
               <div className="flex relative justify-center">
-                <i className="w-[10.5rem] h-[3rem] bg-red-600 text-white uppercase font-bold text-sm hover:bg-red-700 transition-all duration-300 ease-linear flex justify-center items-center">
+                <i className="w-[10.5rem] h-[3rem] bg-red-600 text-white uppercase font-bold text-sm hover:bg-red-700 transition-all duration-300 ease-linear flex justify-center items-center cursor-pointer">
                   Submit now
                 </i>
               </div>

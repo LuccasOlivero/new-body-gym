@@ -11,7 +11,7 @@ function PricingPage() {
       >
         Pricing
       </span>
-      <Pricing></Pricing>;
+      <Pricing />;
     </>
   );
 }

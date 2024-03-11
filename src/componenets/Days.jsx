@@ -22,7 +22,7 @@ function Days() {
           </NavLink>
           <NavLink
             to="tuesday"
-            className={`styles ${
+            className={`${styles} ${
               "/schedule/tuesday" === currLocation.pathname
                 ? "bg-[#ff0336]"
                 : ""
@@ -32,7 +32,7 @@ function Days() {
           </NavLink>
           <NavLink
             to="wednesday"
-            className={`styles ${
+            className={`${styles} ${
               "/schedule/wednesday" === currLocation.pathname
                 ? "bg-[#ff0336]"
                 : ""
@@ -42,7 +42,7 @@ function Days() {
           </NavLink>
           <NavLink
             to="thursday"
-            className={`styles ${
+            className={`${styles} ${
               "/schedule/thursday" === currLocation.pathname
                 ? "bg-[#ff0336]"
                 : ""
@@ -52,7 +52,7 @@ function Days() {
           </NavLink>
           <NavLink
             to="friday"
-            className={`styles ${
+            className={`${styles} ${
               "/schedule/friday" === currLocation.pathname ? "bg-[#ff0336]" : ""
             }`}
           >
@@ -60,7 +60,7 @@ function Days() {
           </NavLink>
           <NavLink
             to="saturday"
-            className={`styles ${
+            className={`${styles} ${
               "/schedule/saturday" === currLocation.pathname
                 ? "bg-[#ff0336]"
                 : ""

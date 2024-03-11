@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 function PricingCard({ children, type, price, bg, item1 = "", item2 = "" }) {
+  const listStyles = "max-sm:text-xs max-xl:text-lg";
   return (
     <>
       <div
@@ -16,17 +17,18 @@ function PricingCard({ children, type, price, bg, item1 = "", item2 = "" }) {
             <span className="uppercase font-bold text-4xl my-3 max-xl:text-3xl max-xl:mb-4 max-sm:text-lg max-lg:text-[1.5rem] max-lg:mb-1 max-lg:my-1">
               ${price}
             </span>
-            <p className="max-sm:text-xs max-xl:text-lg">- Free Hand</p>
-            <p className="max-sm:text-xs max-xl:text-lg">- Gym Fitness</p>
-            <p className="max-sm:text-xs max-xl:text-lg">{item1}</p>
-            <p className="max-sm:text-xs max-xl:text-lg">{item2}</p>
+            <p className={listStyles}>- Free Hand</p>
+            <p className={listStyles}>- Gym Fitness</p>
+            <p className={listStyles}>{item1}</p>
+            <p className={listStyles}>{item2}</p>
           </div>
 
           <div className="relative w-full h-[3rem] min-h-[2rem] max-sm:h-[2rem] max-sm:min-h-[2rem] max-lg:h-[2rem]">
             <NavLink
-              to="/pricing"
+              to="/contact"
               className="w-full h-full bg-[#c92142] text-white 
                 uppercase font-bold text-sm hover:bg-[#ad203c] transition-all duration-300 ease-linear max-sm:text-xs  flex justify-center items-center "
+              onClick={() => window.scroll(0, 0)}
             >
               take a tour
             </NavLink>

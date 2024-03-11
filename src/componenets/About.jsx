@@ -12,7 +12,7 @@ function About() {
   return (
     <div className="bg-grey bg-cover bg-center w-full h-full flex justify-center max-xl:pb-11">
       <section className="h-full bg-cover relative w-full px-[10rem] max-w-[1900px]">
-        <Cards></Cards>
+        <Cards />
 
         <div className="flex items-center justify-between max-xl:justify-center ">
           <div className="w-[35rem] max-xl:w-[23rem]">

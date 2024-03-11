@@ -11,25 +11,12 @@ import Wednesday from "./componenets/Wednesday";
 import Thursday from "./componenets/Thursday";
 import Friday from "./componenets/Friday";
 import Saturday from "./componenets/Saturday";
-import { useEffect } from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
-
-// Component ScrollToTopOnNavigate to reset the scroll
-function ScrollToTopOnNavigate() {
-  const location = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0); // Resets the scroll to the top of the page when changing routes.
-  }, [location.pathname]);
-
-  return null;
-}
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function App() {
   return (
     <>
       <BrowserRouter>
-        <ScrollToTopOnNavigate />
         <Routes>
           <Route index element={<Main />}></Route>
           <Route path="/about" element={<AboutPage />} />
